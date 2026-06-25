@@ -1,0 +1,205 @@
+@use './../_variables' as *;
+
+// hamburger menu & mobile header
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    order: 1;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        color: $COLOR-GRAY-BOLD;
+        z-index: 1000;
+        transition: all 0.5s;
+
+        &:hover {
+        color: $COLOR-BLUE-ADVANTAGES-TEXT;
+        }
+    }
+
+    .header {
+        justify-content: right;
+        padding: 30px;
+
+        &__container {
+            position: fixed;
+            top: 0;
+            right: -120%;
+            width: 100%;
+            height: 100vh;
+            background: $COLOR-FOOTER-SILVER-BG;
+            transition: right 0.3s;
+            z-index: 999;
+            padding-top: 60px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__logotype {
+            width: 230px;
+        }
+
+        &__phone-img {
+            display: none;
+        }
+
+        .nav {
+            &__list {
+                display: block;
+            }
+
+            &__ul {
+                margin: 20px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .active {
+        right: 0;
+    }
+}
+
+// Для планшетов и др. устройств
+
+@media (min-width: 769px) and (max-width: 1380px) {
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .header {
+        &__phone {
+            display: none;
+        }
+    }
+
+    .vector {
+        display: none;
+    }
+
+    .delivery {
+        &__title {
+            font-size: 36px;
+            white-space: none;
+        }
+
+        &__right {
+            &-img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .services {
+        padding-top: 30px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__catalog {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    .advantages {
+        padding: 20px;
+
+        .width-768px {
+            display: none;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+    }
+
+    .work {
+        &::after {
+            display: none;
+        }
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__cards {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+
+        &__card {
+            margin-right: 10px;
+        }
+    }
+
+    .partners {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__logotypes {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+    }
+
+    .cost {
+        text-align: center;
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__logotypes {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+
+        &__form-button {
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}

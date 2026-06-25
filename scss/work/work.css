@@ -3,10 +3,10 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding-top: 65px;
+  padding: 60px 0px 30px;
   box-sizing: border-box;
   width: 100%;
-  height: 534px;
+  min-height: 534px;
   background: linear-gradient(95.22deg, #4B9FCE 0.97%, #68B8E3 26.74%, #45A6DA 98.18%);
 }
 .work::before {
