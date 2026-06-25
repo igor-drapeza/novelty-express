@@ -1,0 +1,22 @@
+.cost {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 65px 0px;
+  background-color: #F3F3F3;
+}
+.cost__title {
+  color: #505457;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+.cost__description {
+  margin-top: 30px;
+  color: #505457;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  white-space: pre-line;
+}/*# sourceMappingURL=cost.css.map */

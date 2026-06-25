@@ -1,0 +1,20 @@
+.partners {
+  display: flex;
+  justify-content: center;
+  padding: 65px 0px;
+}
+.partners__title {
+  color: #505457;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+.partners__logotypes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.partners__logotypes-wrapper {
+  width: 140px;
+}/*# sourceMappingURL=partners.css.map */

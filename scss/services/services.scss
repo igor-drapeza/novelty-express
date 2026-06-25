@@ -1,0 +1,62 @@
+@use './../_variables' as *;
+
+.services {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    color: $COLOR-GRAY-TEXT;
+    font-size: 18px;
+    
+    &__title {
+        white-space: pre-line;
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: -1.5px;
+        line-height: 1.1;
+    }
+
+    &__catalog {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 324px;
+        height: 500px;
+        border-radius: 17px;
+
+        &-subtitle {
+            margin: 40px 30px;
+            align-items: center;
+            white-space: pre-line;
+    }
+        &-img {
+            height: 324px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+
+.horizon-card {
+    height: 240px;
+    &:first-child {
+        margin-bottom: 20px;
+    }
+    .services__card-img {
+            height: 155px;
+            object-fit: cover;
+            width: 100%;
+    }
+}
+
+.horizon-card, .vertical-card {
+    position: relative; 
+    overflow: hidden;
+    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.horizon-card .services__card-subtitle {
+    margin-top: 20px;
+}

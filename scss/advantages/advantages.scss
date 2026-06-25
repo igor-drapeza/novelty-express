@@ -1,0 +1,158 @@
+@use './../_variables' as *;
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 145px 0px;
+    color: $COLOR-GRAY-BOLD;
+
+    &__title {
+        margin-top: 40px;
+        color: $COLOR-GRAY-TEXT;
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: -1.5px;
+        line-height: 1.1;
+    }
+
+    &__content {
+        display: flex;
+        height: 400px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+
+    &__container-text {
+        text-align: center;
+    }
+
+    &__characteristics {
+        display: flex;
+        justify-content: space-between;
+        white-space: pre-line;
+
+        &-value {
+            color: $COLOR-BLUE-ADVANTAGES-TEXT;
+            font-weight: 700;
+            font-style: italic;
+            text-align: right;
+        }
+    }
+
+    &__card {
+        width: 324px;
+        box-sizing: border-box;
+        padding: 50px;
+
+        position: relative;
+
+        &-title {
+            position: relative;
+            margin-top: 20px;
+            color: $COLOR-BLUE-ADVANTAGES-TEXT;
+            font-size: 128px;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        &-title::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(50% 50% at 50% 50%, #C4EAFF 0%,
+                    rgba(185, 230, 255, 0) 100%);
+        }
+
+        &-header {
+            color: $COLOR-BLUE-ADVANTAGES-TEXT;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: italic;
+            margin-top: 40px;
+        }
+        &-subtitle {
+            margin-top: 50px;
+            white-space: pre-line;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &-description {
+            margin-top: 30px;
+            white-space: pre-line;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        &-topImage {
+            background-image: url(./../../assets/src/advantages/28_LADA_Largus_Termo\ 2.png);
+            height: 50%;
+        }
+
+        &-bottomImage {
+            background-image: url(./../../assets/src/advantages/28_LADA_Largus_Termo\ 4.png);
+            height: 50%;
+        }
+    }
+}
+
+.container-for-minicard {
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.big-card {
+    width: 680px
+}
+
+.bg-gray {
+    background-color: $COLOR-WHITE-CARD-BG;
+    border-radius: 17px;
+}
+
+.advantages__miniCards {
+    box-sizing: border-box;
+    padding: 30px;
+    height: 190px;
+    margin-bottom: 20px;
+
+    &-subtitle {
+        white-space: pre-line;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.edit-position {
+    &-img {
+        position: absolute;
+        top: -80px;
+    }
+
+    &-description {
+        position: absolute;
+        bottom: 40px;
+    }
+}
+
+.fast-delivery::before {
+    content: url(./../../assets/src/advantages/fast-delivery.png);
+    position: absolute;
+    left: 200px;
+}
+
+.equipment {
+    &-name {
+        margin-top: 0;
+    }
+    &-desc {
+        margin-top: 10px;
+        width: 250px;
+    }
+}
+
+.card-without-padding {
+    padding: 0;
+    overflow: hidden;
+}

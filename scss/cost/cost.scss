@@ -1,0 +1,27 @@
+@use './../_variables' as *;
+
+.cost {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 65px 0px;
+    background-color: $COLOR-FOOTER-SILVER-BG;
+
+    &__title {
+        color: $COLOR-GRAY-TEXT;
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: -1.5px;
+        line-height: 1.1;
+    }
+
+    &__description {
+        margin-top: 30px;
+        color: $COLOR-GRAY-TEXT;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        white-space: pre-line;
+    }
+
+}

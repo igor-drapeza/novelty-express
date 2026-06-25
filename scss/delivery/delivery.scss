@@ -1,0 +1,105 @@
+@use './../_variables' as *;
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 660px;
+    background: linear-gradient(174.91deg, #238CC6 3.68%, #439ACA 95.91%);
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: url(./../../assets/src/delivery/Vector.svg);
+        top: 100px;
+        right: -15%;
+        transform: rotate(36deg);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    &__info {
+        color: $COLOR-WHITE-TEXT;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-window {
+            z-index: 2;
+            padding: 10px 15px;
+            border-radius: 75px;
+            color: $COLOR-WHITE-TEXT;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            background-color: $COLOR-MAIN-BLUE-WINDOW;
+            position: absolute;
+            top: 75px;
+            left: 30px;
+            & img {
+                margin-right: 10px;
+            }
+            &-back {
+                position: absolute;
+                width: 210px;
+                height: 50px;
+                border-radius: 75px;
+                background-color: $COLOR-SECOND-BLUE-WINDOW;
+                top: 80px;
+                left: 40px; 
+                transform: rotate(-3deg);
+            }
+            // TODO: сделать при наведении rotate(js) 
+            // & клик на переход
+            &-back:hover {               
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 110px;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+        white-space: pre-line;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        margin: 30px 0px;
+        line-height: 1.2;
+        letter-spacing: -1.5px;
+        white-space: pre-line;
+    }
+
+    &__application {
+        font-weight: 600;
+        font-size: 19px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: $COLOR-BLUE-TEXT;
+        background-color: $COLOR-WHITE-TEXT;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        width: 220px;
+        &-img {
+            margin-left: 20px;
+        }
+    }
+}
+
+.vector {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    scale: 1.3;
+    transform: translateY(-30%);
+}

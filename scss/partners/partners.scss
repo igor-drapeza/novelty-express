@@ -1,0 +1,25 @@
+@use './../_variables' as *;
+
+.partners {
+    display: flex;
+    justify-content: center;
+    padding: 65px 0px;
+
+    &__title {
+        color: $COLOR-GRAY-TEXT;
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: -1.5px;
+        line-height: 1.1;
+    }
+    
+    &__logotypes {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        &-wrapper {
+            width: 140px;
+        }
+    }
+}
+

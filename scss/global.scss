@@ -1,0 +1,25 @@
+@use './reset/_normalize';
+@use './reset/_reset';
+@use './fonts';
+
+// @use './delivery/delivery';
+// @use './header/header';
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1390px;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.extrabold {
+  font-weight: 800 !important;
+}
+
+.italic {
+  font-style: italic !important;
+}

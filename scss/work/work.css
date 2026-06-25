@@ -1,0 +1,91 @@
+.work {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 534px;
+  background: linear-gradient(95.22deg, #4B9FCE 0.97%, #68B8E3 26.74%, #45A6DA 98.18%);
+}
+.work::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  scale: 1.2;
+  background: url("./../../assets/src/delivery/Vector.svg") no-repeat center;
+  background-size: contain;
+  z-index: 0;
+}
+.work::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 600px;
+  height: 600px;
+  scale: 1.2;
+  background: url("./../../assets/src/delivery/Vector.svg") no-repeat center;
+  background-size: contain;
+  z-index: 0;
+}
+.work__container {
+  position: relative;
+}
+.work__title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+.work__cards {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+.work__card {
+  position: relative;
+  margin-top: 60px;
+  margin-right: 68px;
+  width: 290px;
+  height: 260px;
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  text-align: center;
+}
+.work__card-img {
+  margin-top: -50px;
+  height: 180px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.work__card-action {
+  margin: 30px auto;
+  display: flex;
+  width: 253px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #3B9DD3;
+  align-items: center;
+  color: #FFFFFF;
+}
+.work__card-number {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+.work__card-desc {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-line;
+  text-align: left;
+}/*# sourceMappingURL=work.css.map */
