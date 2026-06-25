@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="scss/work/work.css">
     <link rel="stylesheet" href="scss/partners/partners.css">
     <link rel="stylesheet" href="scss/cost/cost.css">
+    <link rel="stylesheet" href="scss/footer/footer.css">
     <title>NOVELTY EXPRESS – доставка вакцин и биопрепаратов</title>
     <link rel="shortcut icon" href="./assets/src/fav-icon.png" type="image/x-icon">
 </head>
@@ -267,22 +268,47 @@
             </div>
         </div>
     </section>
-    <section class="cost">
+    <section id="cost" class="cost">
         <div class="cost__container container">
             <h1 class="cost__title">
                 Рассчитать стоимость
             </h1>
             <p class="cost__description">
-                Заполните форму и наш менеджер свяжется 
+                Заполните форму и наш менеджер свяжется
                 с Вами в ближайшее время.
             </p>
-            <form class="cost__form" action="#">
-                <input type="text">
-                <input type="text">
-                <button>Отправить заявку</button>
+            <form class="cost__form" action="#cost">
+                <input class="cost__form-input" type="text" placeholder="Ваше имя">
+                <input class="cost__form-input phoneMask" type="tel" placeholder="+375 (">
+                <button class="cost__form-button">
+                    <span class="cost__form-textBtn">Оставить заявку</span>
+                    <img src="./assets/src/noun-application.svg" alt="noun"></button>
             </form>
+    </section>
+    <section id="footer" class="footer">
+        <div class="footer__container container">
+            <div class="footer__copyright">
+                2026 © “Test project for upgrade skills”
+            </div>
+            <div class="footer__office">
+                <div class="footer__office-img">
+                    <img class="footer__office-icon" src="./assets/src/footer/pointer.svg" alt="pointer map">
+                </div>
+                <div class="footer__office-text">Москва, Филевский бульвар,
+                    д. 39, офис 4
+                </div>
+            </div>
+            <div class="footer__contact">
+                <p class="footer__contact-tel bold">+375 44 123-44-55</p>
+                <p class="footer__contact-email">info@novelty.express</p>
+            </div>
+            <div class="footer__chat">
+                <img class="footer__chat-img" src="./assets/src/footer/chat.svg" alt="chat">
+            </div>
         </div>
     </section>
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script src="./phoneMask.js"></script>
 
 </html>

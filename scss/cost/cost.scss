@@ -16,12 +16,53 @@
     }
 
     &__description {
-        margin-top: 30px;
+        margin-top: 10px;
         color: $COLOR-GRAY-TEXT;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.1;
         white-space: pre-line;
+    }
+
+    &__form {
+        &-input {
+            font-family: "Montserrat", sans-serif;
+            width: 510px;
+            padding: 16px;
+            margin-right: 15px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 400;
+            color: $COLOR-GRAY-BOLD;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+
+            &:focus {
+                outline: none;
+                border: 2px solid $COLOR-GRAY-BOLD;
+                box-sizing: border-box;
+            }
+        }
+
+        &-button {
+            display: inline-flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 330px;
+            padding: 17px 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: $COLOR-BLUE-ADVANTAGES-TEXT;
+            cursor: pointer;
+        }
+
+        &-textBtn {
+            font-family: "Montserrat", sans-serif;
+            color: $COLOR-WHITE-CARD-BG;
+            font-size: 19px;
+            font-weight: 600;
+        }
     }
 
 }
