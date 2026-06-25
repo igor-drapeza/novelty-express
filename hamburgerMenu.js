@@ -5,9 +5,11 @@ hamburger.addEventListener('click', function(e) {
 	e.stopPropagation();
 	header.classList.toggle('active');
 		if (header.classList.contains('active')) {
-        hamburger.textContent = '✕';
+        	hamburger.textContent = '✕';
+	        document.body.style.overflow = 'hidden';
 		} else {
 			hamburger.textContent = '☰';
+	        document.body.style.overflow = 'auto';
 		}
 });
 
