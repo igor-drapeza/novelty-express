@@ -1,0 +1,211 @@
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  order: 1;
+}
+
+@media (max-width: 570px) {
+  .cost__form-input {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0px;
+    height: 100%;
+  }
+  .footer__container {
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer__copyright {
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+    color: #728D9B;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+  .hamburger:hover {
+    color: #439ACA;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    justify-content: right;
+    padding: 5px 20px;
+  }
+  .header__container {
+    position: fixed;
+    justify-content: start !important;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    background: #F3F3F3;
+    transition: right 0.3s;
+    z-index: 999;
+    padding-top: 60px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header__logotype {
+    width: 230px;
+  }
+  .header__phone-img {
+    display: none;
+  }
+  .header .nav__list {
+    display: block;
+  }
+  .header .nav__ul {
+    margin: 20px;
+    font-size: 22px;
+  }
+  .active {
+    right: 0;
+  }
+}
+@media (max-width: 1380px) {
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__login {
+    display: none;
+  }
+  .vector {
+    display: none;
+  }
+  .delivery__title {
+    font-size: 36px;
+    white-space: none;
+  }
+  .delivery__right-img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .services {
+    padding-top: 30px;
+  }
+  .services__container {
+    flex-direction: column;
+  }
+  .services__title {
+    text-align: center;
+  }
+  .services__catalog {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .advantages {
+    padding: 20px;
+  }
+  .advantages .width-768px {
+    display: none;
+  }
+  .advantages__container {
+    flex-direction: column;
+  }
+  .advantages__title {
+    text-align: center;
+  }
+  .advantages__content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+  }
+  .advantages__card-bigImage {
+    width: 100%;
+  }
+  .work::after {
+    display: none;
+  }
+  .work__container {
+    flex-direction: column;
+  }
+  .work__title {
+    text-align: center;
+  }
+  .work__cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+  }
+  .work__card {
+    margin-right: 10px;
+  }
+  .partners__container {
+    flex-direction: column;
+  }
+  .partners__title {
+    text-align: center;
+  }
+  .partners__logotypes {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+  }
+  .cost {
+    text-align: center;
+  }
+  .cost__container {
+    flex-direction: column;
+  }
+  .cost__title {
+    text-align: center;
+  }
+  .cost__logotypes {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+  }
+  .cost__form-button {
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 1200px) {
+  .delivery {
+    background-image: linear-gradient(95.22deg, rgba(123, 177, 209, 0.9) 0.97%, rgba(112, 185, 224, 0.9) 26.74%, rgba(33, 120, 167, 0.9) 98.18%), url("./../../assets/src/delivery/man-by-truck-guy-delivery-uniform-man-with-clipboard_1157-46192 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .delivery::before {
+    display: none;
+  }
+  .delivery {
+    height: 100%;
+    text-align: center;
+  }
+  .delivery__title {
+    margin-top: 50px;
+  }
+  .delivery__application {
+    margin: 0px auto 50px;
+  }
+  .delivery__container {
+    flex-direction: column;
+  }
+  .delivery__right-img {
+    display: none;
+  }
+}/*# sourceMappingURL=media768.css.map */

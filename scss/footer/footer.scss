@@ -1,0 +1,42 @@
+@use './../_variables' as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: $COLOR-FOOTER-SILVER-BG;
+    border-top: 2px solid $COLOR-FOOTER-LINE;
+    color: $COLOR-GRAY-BOLD;
+    font-size: 16px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        width: 40%;
+    }
+    &__office {
+        display: flex;
+        text-align: left;
+        align-items: center;
+
+        &-img {
+            margin-right: 10px;
+        }
+
+        &-text {
+            white-space: pre-line;
+        }
+    }
+
+    &__chat {
+        background-color: $COLOR-BLUE-ADVANTAGES-TEXT;
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

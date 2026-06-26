@@ -13,8 +13,16 @@
 .partners__logotypes {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 20px;
 }
 .partners__logotypes-wrapper {
   width: 140px;
+}
+.partners__logotypes-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=partners.css.map */

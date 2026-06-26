@@ -1,0 +1,272 @@
+@use './../_variables' as *;
+
+// hamburger menu & mobile header
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    order: 1;
+}
+
+@media (max-width: 570px) {
+    .cost__form-input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0px;
+        height: 100%;
+        &__container {
+            text-align: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+        &__copyright {
+            width: 100%;
+        }
+    }
+
+    .hamburger {
+        display: block;
+        color: $COLOR-GRAY-BOLD;
+        z-index: 1000;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $COLOR-BLUE-ADVANTAGES-TEXT;
+        }
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        justify-content: right;
+        padding: 5px 20px;
+
+        &__container {
+            position: fixed;
+            justify-content: start !important;
+            top: 0;
+            right: -120%;
+            width: 100%;
+            height: 100vh;
+            background: $COLOR-FOOTER-SILVER-BG;
+            transition: right 0.3s;
+            z-index: 999;
+            padding-top: 60px;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__logotype {
+            width: 230px;
+        }
+
+        &__phone-img {
+            display: none;
+        }
+
+        .nav {
+            &__list {
+                display: block;
+            }
+
+            &__ul {
+                margin: 20px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .active {
+        right: 0;
+    }
+}
+
+// Для планшетов и др. устройств
+@media (max-width: 1380px) {
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .header {
+        &__phone {
+            display: none;
+        }
+
+        &__login {
+            display: none;
+        }
+    }
+
+    .vector {
+        display: none;
+    }
+
+    .delivery {
+        &__title {
+            font-size: 36px;
+            white-space: none;
+        }
+
+        &__right {
+            &-img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .services {
+        padding-top: 30px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__catalog {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    .advantages {
+        padding: 20px;
+
+        .width-768px {
+            display: none;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+        &__card {
+            &-bigImage {
+                width: 100%;
+            }}
+    }
+
+    .work {
+        &::after {
+            display: none;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__cards {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+
+        &__card {
+            margin-right: 10px;
+        }
+    }
+
+    .partners {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__logotypes {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+    }
+
+    .cost {
+        text-align: center;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__logotypes {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+
+        &__form-button {
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .delivery {
+        background-image:
+            linear-gradient(95.22deg, rgba(123, 177, 209, 0.9) 0.97%, rgba(112, 185, 224, 0.9) 26.74%, rgba(33, 120, 167, 0.9) 98.18%),
+            url("./../../assets/src/delivery/man-by-truck-guy-delivery-uniform-man-with-clipboard_1157-46192 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            display: none;
+        }
+
+        height: 100%;
+        text-align: center;
+
+        &__title {
+            margin-top: 50px;
+        }
+
+        &__application {
+            margin: 0px auto 50px;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__right-img {
+            display: none;
+        }
+    }
+}
